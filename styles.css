@@ -1,173 +1,155 @@
-bplist00�_WebMainResource�	
-_WebResourceTextEncodingName_WebResourceData_WebResourceMIMEType_WebResourceFrameName^WebResourceURLUutf-8O%�<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2575.7">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
-  </style>
-</head>
-<body>
-<p class="p1">* {</p>
-<p class="p1"><span class="Apple-converted-space">    </span>margin: 0;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>padding: 0;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>box-sizing: border-box;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">body {</p>
-<p class="p1"><span class="Apple-converted-space">    </span>font-family: 'Roboto', sans-serif;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>background-color: #001F3F;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>color: #E0E0E0;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>line-height: 1.6;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">.container {</p>
-<p class="p1"><span class="Apple-converted-space">    </span>max-width: 1200px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>margin: 0 auto;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>padding: 0 20px;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">.hero {</p>
-<p class="p1"><span class="Apple-converted-space">    </span>text-align: center;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>padding: 60px 0;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>background: linear-gradient(to bottom, #001F3F, #003366);</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">.logo {</p>
-<p class="p1"><span class="Apple-converted-space">    </span>width: 150px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>height: auto;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>margin-bottom: 20px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>filter: brightness(1.1); /* Slight glow for logo */</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">.hero h1 {</p>
-<p class="p1"><span class="Apple-converted-space">    </span>font-size: 3em;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>color: #007BFF;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>margin-bottom: 10px;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">.tagline {</p>
-<p class="p1"><span class="Apple-converted-space">    </span>font-size: 1.2em;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>color: #E0E0E0;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>font-weight: 300;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>margin-bottom: 20px;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">.intro {</p>
-<p class="p1"><span class="Apple-converted-space">    </span>font-size: 1.1em;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>max-width: 600px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>margin: 0 auto;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">.helped-section {</p>
-<p class="p1"><span class="Apple-converted-space">    </span>padding: 60px 0;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>background-color: #001F3F;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">.helped-section h2 {</p>
-<p class="p1"><span class="Apple-converted-space">    </span>text-align: center;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>font-size: 2.5em;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>color: #007BFF;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>margin-bottom: 20px;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">.helped-section p {</p>
-<p class="p1"><span class="Apple-converted-space">    </span>text-align: center;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>max-width: 800px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>margin: 0 auto 40px;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">.services {</p>
-<p class="p1"><span class="Apple-converted-space">    </span>list-style: none;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>display: grid;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));</p>
-<p class="p1"><span class="Apple-converted-space">    </span>gap: 20px;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">.services li {</p>
-<p class="p1"><span class="Apple-converted-space">    </span>background: rgba(0, 123, 255, 0.1);</p>
-<p class="p1"><span class="Apple-converted-space">    </span>padding: 20px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>border-radius: 8px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>border-left: 4px solid #007BFF;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">.cta-section {</p>
-<p class="p1"><span class="Apple-converted-space">    </span>padding: 60px 0;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>text-align: center;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>background: linear-gradient(to bottom, #003366, #001F3F);</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">.cta-section h2 {</p>
-<p class="p1"><span class="Apple-converted-space">    </span>font-size: 2.5em;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>color: #FFFFFF;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>margin-bottom: 40px;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">.buttons {</p>
-<p class="p1"><span class="Apple-converted-space">    </span>display: flex;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>justify-content: center;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>gap: 20px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>flex-wrap: wrap;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>margin-bottom: 20px;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">.btn {</p>
-<p class="p1"><span class="Apple-converted-space">    </span>display: inline-block;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>padding: 15px 30px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>font-size: 1.1em;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>text-decoration: none;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>border-radius: 5px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>transition: transform 0.3s, box-shadow 0.3s;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">.btn-primary {</p>
-<p class="p1"><span class="Apple-converted-space">    </span>background: #007BFF;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>color: #FFFFFF;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">.btn-secondary {</p>
-<p class="p1"><span class="Apple-converted-space">    </span>background: transparent;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>color: #007BFF;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>border: 2px solid #007BFF;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">.btn:hover {</p>
-<p class="p1"><span class="Apple-converted-space">    </span>transform: translateY(-2px);</p>
-<p class="p1"><span class="Apple-converted-space">    </span>box-shadow: 0 5px 15px rgba(0, 123, 255, 0.3);</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">.note {</p>
-<p class="p1"><span class="Apple-converted-space">    </span>font-style: italic;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>color: #A0A0A0;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">footer {</p>
-<p class="p1"><span class="Apple-converted-space">    </span>padding: 20px 0;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>text-align: center;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>background-color: #001F3F;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>border-top: 1px solid #003366;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">footer a {</p>
-<p class="p1"><span class="Apple-converted-space">    </span>color: #007BFF;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>text-decoration: none;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">footer a:hover {</p>
-<p class="p1"><span class="Apple-converted-space">    </span>text-decoration: underline;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">/* Responsive */</p>
-<p class="p1">@media (max-width: 768px) {</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.hero h1 { font-size: 2em; }</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.buttons { flex-direction: column; align-items: center; }</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.services { grid-template-columns: 1fr; }</p>
-<p class="p1">}</p>
-</body>
-</html>
-Ytext/htmlP_file:///index.html    ( F X n � � �&O&Y&Z                           &o
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #001F3F;
+    color: #E0E0E0;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.hero {
+    text-align: center;
+    padding: 60px 0;
+    background: linear-gradient(to bottom, #001F3F, #003366);
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+    margin-bottom: 20px;
+    filter: brightness(1.1); /* Slight glow for logo */
+}
+
+.hero h1 {
+    font-size: 3em;
+    color: #007BFF;
+    margin-bottom: 10px;
+}
+
+.tagline {
+    font-size: 1.2em;
+    color: #E0E0E0;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.intro {
+    font-size: 1.1em;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.helped-section {
+    padding: 60px 0;
+    background-color: #001F3F;
+}
+
+.helped-section h2 {
+    text-align: center;
+    font-size: 2.5em;
+    color: #007BFF;
+    margin-bottom: 20px;
+}
+
+.helped-section p {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 40px;
+}
+
+.services {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.services li {
+    background: rgba(0, 123, 255, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 4px solid #007BFF;
+}
+
+.cta-section {
+    padding: 60px 0;
+    text-align: center;
+    background: linear-gradient(to bottom, #003366, #001F3F);
+}
+
+.cta-section h2 {
+    font-size: 2.5em;
+    color: #FFFFFF;
+    margin-bottom: 40px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 1.1em;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.btn-primary {
+    background: #007BFF;
+    color: #FFFFFF;
+}
+
+.btn-secondary {
+    background: transparent;
+    color: #007BFF;
+    border: 2px solid #007BFF;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 123, 255, 0.3);
+}
+
+.note {
+    font-style: italic;
+    color: #A0A0A0;
+}
+
+footer {
+    padding: 20px 0;
+    text-align: center;
+    background-color: #001F3F;
+    border-top: 1px solid #003366;
+}
+
+footer a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero h1 { font-size: 2em; }
+    .buttons { flex-direction: column; align-items: center; }
+    .services { grid-template-columns: 1fr; }
+}
