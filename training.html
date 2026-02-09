@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Training Programs - RADIT IT LLC</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .training-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .training-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .training-header h1 {
+            color: #007BFF;
+            font-size: 2.8em;
+            margin-bottom: 15px;
+        }
+
+        .training-header p {
+            max-width: 800px;
+            margin: 0 auto;
+            font-size: 1.1em;
+            color: #E0E0E0;
+        }
+
+        .training-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+
+        .training-card {
+            background: linear-gradient(145deg, rgba(0, 123, 255, 0.1), rgba(0, 123, 255, 0.05));
+            border-radius: 12px;
+            padding: 30px;
+            border: 1px solid rgba(0, 123, 255, 0.2);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .training-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 123, 255, 0.2);
+            border-color: #007BFF;
+        }
+
+        .training-card.featured {
+            border: 2px solid #007BFF;
+            background: linear-gradient(145deg, rgba(0, 123, 255, 0.15), rgba(0, 123, 255, 0.08));
+        }
+
+        .featured-badge {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: #007BFF;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.8em;
+            font-weight: bold;
+        }
+
+        .training-icon {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #007BFF;
+        }
+
+        .training-card h3 {
+            color: #FFFFFF;
+            font-size: 1.5em;
+            margin-bottom: 15px;
+            min-height: 60px;
+        }
+
+        .training-price {
+            font-size: 2em;
+            color: #007BFF;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .training-desc {
+            color: #E0E0E0;
+            margin-bottom: 25px;
+            line-height: 1.6;
+        }
+
+        .bootcamp-duration {
+            display: inline-block;
+            background: rgba(0, 123, 255, 0.2);
+            color: #007BFF;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+
+        .training-features {
+            list-style: none;
+            margin-bottom: 25px;
+        }
+
+        .training-features li {
+            color: #E0E0E0;
+            margin-bottom: 8px;
+            padding-left: 25px;
+            position: relative;
+        }
+
+        .training-features li:before {
+            content: "✓";
+            color: #007BFF;
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+
+        .curriculum-section {
+            margin-top: 20px;
+            padding: 15px;
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+        }
+
+        .curriculum-section h4 {
+            color: #FFFFFF;
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+
+        .curriculum-list {
+            color: #E0E0E0;
+            font-size: 0.9em;
+            line-height: 1.5;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 15px;
+            margin-top: 30px;
+        }
+
+        .cta-buttons .btn {
+            flex: 1;
+            text-align: center;
+        }
+
+        .course-details {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: #A0A0A0;
+            font-size: 0.9em;
+            margin-top: 10px;
+        }
+
+        .testimonials {
+            background: rgba(0, 123, 255, 0.05);
+            padding: 40px;
+            border-radius: 12px;
+            margin-top: 60px;
+        }
+
+        .testimonials h2 {
+            text-align: center;
+            color: #007BFF;
+            margin-bottom: 30px;
+        }
+
+        .testimonial-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .testimonial-card {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 25px;
+            border-radius: 8px;
+            border-left: 4px solid #007BFF;
+        }
+
+        .testimonial-text {
+            font-style: italic;
+            color: #E0E0E0;
+            margin-bottom: 15px;
+        }
+
+        .testimonial-author {
+            color: #007BFF;
+            font-weight: bold;
+        }
+
+        .training-benefits {
+            margin-top: 60px;
+        }
+
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .benefit-item {
+            text-align: center;
+            padding: 20px;
+            background: rgba(0, 123, 255, 0.1);
+            border-radius: 8px;
+        }
+
+        .benefit-item h4 {
+            color: #FFFFFF;
+            margin: 15px 0 10px;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-top: 40px;
+            color: #007BFF;
+            text-decoration: none;
+            font-size: 1.1em;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+
+        .custom-training {
+            background: linear-gradient(145deg, rgba(0, 123, 255, 0.15), rgba(0, 86, 179, 0.1));
+            padding: 40px;
+            border-radius: 12px;
+            margin-top: 60px;
+            text-align: center;
+            border: 2px solid #007BFF;
+        }
+
+        .custom-training h2 {
+            color: #007BFF;
+            margin-bottom: 20px;
+        }
+
+        .custom-training p {
+            color: #E0E0E0;
+            margin-bottom: 20px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        @media (max-width: 768px) {
+            .training-cards {
+                grid-template-columns: 1fr;
+            }
+            
+            .cta-buttons {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="training-container">
+        <div class="training-header">
+            <h1>Intensive Bootcamp Training Programs</h1>
+            <p>Accelerate your career with our intensive bootcamps. Each program includes comprehensive materials, hands-on labs, and real-world scenarios.</p>
+        </div>
+
+        <div class="training-cards">
+            <!-- Cyber Security Training -->
+            <div class="training-card">
+                <div class="training-icon">🛡️</div>
+                <div class="bootcamp-duration">15-Day Intensive Bootcamp</div>
+                <h3>Cyber Security Bootcamp</h3>
+                <div class="training-price">$350</div>
+                <div class="training-desc">
+                    Complete cybersecurity bootcamp covering all domains with comprehensive notes, theory, labs, and industrial experience.
+                </div>
+                <ul class="training-features">
+                    <li>Complete Domain Coverage</li>
+                    <li>Comprehensive Notes & Theory</li>
+                    <li>Hands-on Lab Exercises</li>
+                    <li>Industrial Experience Notes</li>
+                    <li>Scenario-Based Learning (Basic to Advanced)</li>
+                    <li>Real-World Case Studies</li>
+                </ul>
+                <div class="curriculum-section">
+                    <h4>Curriculum Includes:</h4>
+                    <div class="curriculum-list">
+                        Network Security • Ethical Hacking • Cryptography • Incident Response • Security Compliance • Risk Management • Penetration Testing
+                    </div>
+                </div>
+                <div class="course-details">
+                    <span>🎓 Certification Included</span>
+                    <span>🖥️ Hands-on Labs</span>
+                    <span>📚 Complete Materials</span>
+                </div>
+                <div class="cta-buttons">
+                    <a href="payment.html?product=cyber-security&price=350" class="btn btn-primary">Enroll Now</a>
+                    <button class="btn btn-secondary" onclick="showDetails('cyber')">View Syllabus</button>
+                </div>
+            </div>
+
+            <!-- AI/ML Training -->
+            <div class="training-card featured">
+                <div class="featured-badge">Most Popular</div>
+                <div class="training-icon">🤖</div>
+                <div class="bootcamp-duration">15-Day Intensive Bootcamp</div>
+                <h3>AI / Machine Learning Bootcamp</h3>
+                <div class="training-price">$350</div>
+                <div class="training-desc">
+                    Complete AI/ML bootcamp covering all essential topics with comprehensive outlines, practical implementations, and industry projects.
+                </div>
+                <ul class="training-features">
+                    <li>Complete AI/ML Curriculum</li>
+                    <li>Detailed Outlines & Materials</li>
+                    <li>Hands-on Coding Sessions</li>
+                    <li>Industry Project Implementation</li>
+                    <li>Model Deployment Strategies</li>
+                    <li>Real-World Applications</li>
+                </ul>
+                <div class="curriculum-section">
+                    <h4>Curriculum Includes:</h4>
+                    <div class="curriculum-list">
+                        Python for AI • Machine Learning Algorithms • Deep Learning • Neural Networks • NLP • Computer Vision • Model Deployment • MLOps
+                    </div>
+                </div>
+                <div class="course-details">
+                    <span>🎓 Certification Included</span>
+                    <span>💻 Code Examples</span>
+                    <span>📊 Real Projects</span>
+                </div>
+                <div class="cta-buttons">
+                    <a href="payment.html?product=ai-ml&price=350" class="btn btn-primary">Enroll Now</a>
+                    <button class="btn btn-secondary" onclick="showDetails('ai')">View Syllabus</button>
+                </div>
+            </div>
+
+            <!-- Java Technology -->
+            <div class="training-card">
+                <div class="training-icon">☕</div>
+                <div class="bootcamp-duration">15-30 Days Flexible Program</div>
+                <h3>Java Technology Bootcamp</h3>
+                <div class="training-price">$300</div>
+                <div class="training-desc">
+                    Comprehensive Java training covering from fundamentals to advanced topics with flexible duration options.
+                </div>
+                <ul class="training-features">
+                    <li>Core Java to Advanced Topics</li>
+                    <li>Spring Framework & Spring Boot</li>
+                    <li>Microservices Architecture</li>
+                    <li>RESTful APIs Development</li>
+                    <li>Database Integration</li>
+                    <li>Project Development</li>
+                </ul>
+                <div class="curriculum-section">
+                    <h4>Curriculum Includes:</h4>
+                    <div class="curriculum-list">
+                        Java Fundamentals • OOP Concepts • Collections • Spring Boot • Microservices • REST APIs • JPA/Hibernate • Security
+                    </div>
+                </div>
+                <div class="course-details">
+                    <span>🎓 Certification Included</span>
+                    <span>⚡ Flexible Schedule</span>
+                    <span>🏗️ Project Building</span>
+                </div>
+                <div class="cta-buttons">
+                    <a href="payment.html?product=java&price=300" class="btn btn-primary">Enroll Now</a>
+                    <button class="btn btn-secondary" onclick="showDetails('java')">View Syllabus</button>
+                </div>
+            </div>
+
+            <!-- .NET Technology -->
+            <div class="training-card">
+                <div class="training-icon">🌐</div>
+                <div class="bootcamp-duration">30-45 Days Comprehensive Program</div>
+                <h3>.NET Technology Bootcamp</h3>
+                <div class="training-price">$300</div>
+                <div class="training-desc">
+                    Complete .NET development program covering C#, ASP.NET Core, and enterprise application development.
+                </div>
+                <ul class="training-features">
+                    <li>C# Programming Fundamentals</li>
+                    <li>ASP.NET Core MVC & Web API</li>
+                    <li>Entity Framework Core</li>
+                    <li>Azure Cloud Integration</li>
+                    <li>Enterprise Application Development</li>
+                    <li>Blazor & Modern Web Development</li>
+                </ul>
+                <div class="curriculum-section">
+                    <h4>Curriculum Includes:</h4>
+                    <div class="curriculum-list">
+                        C# Fundamentals • ASP.NET Core • Entity Framework • Web APIs • Azure Services • Blazor • Security • Deployment
+                    </div>
+                </div>
+                <div class="course-details">
+                    <span>🎓 Certification Included</span>
+                    <span>☁️ Cloud Integration</span>
+                    <span>🏢 Enterprise Focus</span>
+                </div>
+                <div class="cta-buttons">
+                    <a href="payment.html?product=dotnet&price=300" class="btn btn-primary">Enroll Now</a>
+                    <button class="btn btn-secondary" onclick="showDetails('dotnet')">View Syllabus</button>
+                </div>
+            </div>
+
+            <!-- Full Stack Developer -->
+            <div class="training-card featured">
+                <div class="featured-badge">Career Accelerator</div>
+                <div class="training-icon">🚀</div>
+                <div class="bootcamp-duration">45 Days Complete Program</div>
+                <h3>Full Stack Developer Bootcamp</h3>
+                <div class="training-price">$500</div>
+                <div class="training-desc">
+                    Become a complete full-stack developer mastering both frontend and backend technologies for end-to-end web development.
+                </div>
+                <ul class="training-features">
+                    <li>Frontend Development (HTML/CSS/JS)</li>
+                    <li>React.js & Vue.js Frameworks</li>
+                    <li>Node.js & Express.js Backend</li>
+                    <li>Database Management</li>
+                    <li>REST APIs & GraphQL</li>
+                    <li>DevOps & Deployment</li>
+                    <li>Complete Project Development</li>
+                </ul>
+                <div class="curriculum-section">
+                    <h4>Curriculum Includes:</h4>
+                    <div class="curriculum-list">
+                        Frontend Fundamentals • React/Vue • Node.js • Express • MongoDB • PostgreSQL • REST/GraphQL • DevOps • Cloud Deployment
+                    </div>
+                </div>
+                <div class="course-details">
+                    <span>🎓 Certification Included</span>
+                    <span>🔧 End-to-End Projects</span>
+                    <span>📈 Career Ready</span>
+                </div>
+                <div class="cta-buttons">
+                    <a href="payment.html?product=fullstack&price=500" class="btn btn-primary">Enroll Now</a>
+                    <button class="btn btn-secondary" onclick="showDetails('fullstack')">View Syllabus</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="custom-training">
+            <h2>Need Customized Training?</h2>
+            <p>We offer customized training programs tailored to your specific needs and schedule. Whether you need a different duration, specific topics, or corporate training, we can create a program just for you.</p>
+            <a href="mailto:admin@radit.cloud" class="btn btn-primary" style="padding: 15px 30px; font-size: 1.1em;">Contact Admin for Custom Learning</a>
+            <p style="margin-top: 15px; font-size: 0.9em;">Email: admin@radit.cloud</p>
+        </div>
+
+        <div class="training-benefits">
+            <h2 style="text-align: center; color: #007BFF; margin-bottom: 30px;">Bootcamp Benefits</h2>
+            <div class="benefits-grid">
+                <div class="benefit-item">
+                    <div style="font-size: 2.5em;">⚡</div>
+                    <h4>Intensive Learning</h4>
+                    <p>Accelerated programs designed for rapid skill acquisition</p>
+                </div>
+                <div class="benefit-item">
+                    <div style="font-size: 2.5em;">🖥️</div>
+                    <h4>Hands-on Labs</h4>
+                    <p>Practical exercises and real-world scenarios</p>
+                </div>
+                <div class="benefit-item">
+                    <div style="font-size: 2.5em;">📚</div>
+                    <h4>Complete Materials</h4>
+                    <p>Comprehensive notes, theory, and industrial experience</p>
+                </div>
+                <div class="benefit-item">
+                    <div style="font-size: 2.5em;">👨‍🏫</div>
+                    <h4>Expert Guidance</h4>
+                    <p>Learn from industry professionals with real experience</p>
+                </div>
+                <div class="benefit-item">
+                    <div style="font-size: 2.5em;">🎓</div>
+                    <h4>Certification</h4>
+                    <p>Industry-recognized certificates upon completion</p>
+                </div>
+                <div class="benefit-item">
+                    <div style="font-size: 2.5em;">💼</div>
+                    <h4>Career Support</h4>
+                    <p>Resume review and job placement assistance</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="testimonials">
+            <h2>Student Success Stories</h2>
+            <div class="testimonial-cards">
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        "The 15-day Cyber Security bootcamp was intense but incredibly valuable. The scenario-based learning helped me understand real-world security challenges."
+                    </div>
+                    <div class="testimonial-author">- Michael R., Security Analyst</div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        "The Full Stack bootcamp gave me all the skills I needed to switch careers. The 45-day program was perfectly paced with hands-on projects every week."
+                    </div>
+                    <div class="testimonial-author">- Sarah L., Full Stack Developer</div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        "As a beginner in AI/ML, the 15-day bootcamp provided the perfect foundation. The comprehensive materials and labs made complex concepts easy to understand."
+                    </div>
+                    <div class="testimonial-author">- David K., AI Engineer</div>
+                </div>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 40px;">
+            <p style="color: #E0E0E0; font-size: 1.1em; margin-bottom: 20px;">
+                Ready to accelerate your career? Enroll in one of our intensive bootcamps today!
+            </p>
+            <a href="payment.html" class="btn btn-primary" style="padding: 15px 40px; font-size: 1.2em;">View All Payment Options</a>
+        </div>
+
+        <a href="index.html" class="back-link">← Back to Home</a>
+    </div>
+
+    <script>
+        function showDetails(course) {
+            const courseDetails = {
+                'cyber': 'Cyber Security Bootcamp Syllabus: 1. Network Security Fundamentals 2. Ethical Hacking Techniques 3. Cryptography & Encryption 4. Incident Response 5. Security Compliance Standards 6. Penetration Testing 7. Risk Management 8. Real-World Case Studies',
+                'ai': 'AI/ML Bootcamp Syllabus: 1. Python for AI/ML 2. Machine Learning Algorithms 3. Deep Learning Fundamentals 4. Neural Networks 5. Natural Language Processing 6. Computer Vision 7. Model Deployment 8. MLOps Practices 9. Industry Projects',
+                'java': 'Java Bootcamp Syllabus: 1. Java Fundamentals 2. Object-Oriented Programming 3. Collections Framework 4. Spring Framework 5. Spring Boot 6. Microservices 7. REST APIs 8. Database Integration 9. Security 10. Project Development',
+                'dotnet': '.NET Bootcamp Syllabus: 1. C# Programming 2. ASP.NET Core 3. MVC Architecture 4. Web APIs 5. Entity Framework 6. Azure Services 7. Blazor Development 8. Security 9. Deployment 10. Enterprise Applications',
+                'fullstack': 'Full Stack Bootcamp Syllabus: 1. HTML/CSS/JavaScript 2. React.js Framework 3. Vue.js Framework 4. Node.js Backend 5. Express.js 6. Database Management 7. REST/GraphQL APIs 8. DevOps 9. Cloud Deployment 10. Complete Projects'
+            };
+            
+            alert(courseDetails[course]);
+        }
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
