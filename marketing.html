@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile Marketing Services - STRATEDGE IT CONSULTING</title>
+    <title>Profile Marketing Services - RADIT IT CONSULTING</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <style>
@@ -25,14 +25,14 @@
         }
 
         .company-name {
-            color: #FFFFFF;
-            font-size: 1.5em;
+            color: #007BFF;
+            font-size: 1.8em;
             margin-bottom: 10px;
-            font-weight: 300;
+            font-weight: bold;
         }
 
         .tagline {
-            color: #007BFF;
+            color: #E0E0E0;
             font-size: 1.2em;
             margin-bottom: 20px;
             font-style: italic;
@@ -227,6 +227,31 @@
             text-decoration: underline;
         }
 
+        .stripe-button {
+            background: #635bff;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            font-size: 1.1em;
+        }
+
+        .stripe-button:hover {
+            background: #4a42d4;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(99, 91, 255, 0.3);
+        }
+
+        .stripe-button.small {
+            padding: 10px 20px;
+            font-size: 1em;
+        }
+
         @media (max-width: 768px) {
             .pricing-table {
                 display: block;
@@ -245,13 +270,18 @@
                 flex-direction: column;
                 align-items: center;
             }
+            
+            .stripe-button {
+                width: 100%;
+                text-align: center;
+            }
         }
     </style>
 </head>
 <body>
     <div class="marketing-container">
         <div class="marketing-header">
-            <div class="company-name">STRATEDGE IT CONSULTING</div>
+            <div class="company-name">RADIT IT CONSULTING</div>
             <div class="tagline">We help you get hired wherever and whenever.</div>
             <h1>Job Application & Career Marketing Services</h1>
             <p>Comprehensive packages designed to accelerate your job search and connect you with the right opportunities through strategic marketing and application support.</p>
@@ -262,8 +292,8 @@
                 <tr>
                     <th>Features</th>
                     <th>Basic</th>
-                    <th>Elite</th>
-                    <th>Premium</th>
+                    <th>Intermediate</th>
+                    <th>Advanced</th>
                 </tr>
             </thead>
             <tbody>
@@ -404,4 +434,103 @@
 
         <div class="cta-section">
             <h2 style="color: #007BFF; margin-bottom: 20px;">Choose Your Success Package</h2>
-            <p style="color: #E0E0E0; max-width: 800px; margin: 0 auto 30px
+            <p style="color: #E0E0E0; max-width: 800px; margin: 0 auto 30px;">
+                Select the package that best fits your career goals and budget. All packages include dedicated support and proven strategies to accelerate your job search.
+            </p>
+            <div class="cta-buttons">
+                <a href="https://tinyurl.com/market-basic" class="stripe-button" target="_blank">Get Basic Package - $1,500</a>
+                <a href="https://tinyurl.com/market-intermediate" class="stripe-button" target="_blank">Get Intermediate Package - $3,000</a>
+                <a href="https://tinyurl.com/market-advanced" class="stripe-button" target="_blank">Get Advanced Package - $5,000</a>
+            </div>
+            <p style="color: #A0A0A0; margin-top: 15px; font-size: 0.9em;">Secure payment processed by Stripe</p>
+        </div>
+
+        <div class="achievements-section">
+            <h2 style="text-align: center; color: #007BFF; margin-bottom: 30px;">Our Achievements</h2>
+            <div class="achievements-grid">
+                <div class="achievement-card">
+                    <div class="achievement-icon">👥</div>
+                    <div class="achievement-number">1,569+</div>
+                    <div class="achievement-desc">Clients Landed Their Dream Job</div>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon">🎯</div>
+                    <div class="achievement-number">8,000+</div>
+                    <div class="achievement-desc">Clients Assisted with Resources</div>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon">📅</div>
+                    <div class="achievement-number">6+ Years</div>
+                    <div class="achievement-desc">Job Placement Consulting Experience</div>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon">🎓</div>
+                    <div class="achievement-number">670+</div>
+                    <div class="achievement-desc">Students Provided Technical Training</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="services-details">
+            <h2 style="text-align: center; color: #007BFF; margin-bottom: 30px;">Comprehensive Service Details</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Job Application Assistance</h3>
+                    <ul>
+                        <li>Personalized job search strategy</li>
+                        <li>Daily application tracking</li>
+                        <li>Priority access to exclusive openings</li>
+                        <li>Direct client resume submission</li>
+                        <li>Application follow-up management</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <h3>Resume & Profile Optimization</h3>
+                    <ul>
+                        <li>ATS-friendly resume formatting</li>
+                        <li>Keyword optimization for each role</li>
+                        <li>LinkedIn profile complete makeover</li>
+                        <li>Cover letter customization</li>
+                        <li>Portfolio development guidance</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <h3>Interview & Technical Support</h3>
+                    <ul>
+                        <li>Comprehensive interview preparation</li>
+                        <li>Technical assessment guidance</li>
+                        <li>Mock interview sessions</li>
+                        <li>Industry-specific training</li>
+                        <li>Salary negotiation strategies</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <h3>Ongoing Support</h3>
+                    <ul>
+                        <li>Email & LinkedIn chat support</li>
+                        <li>Regular progress reviews</li>
+                        <li>Job search automation tools</li>
+                        <li>Certification assistance</li>
+                        <li>Onboarding guidance</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="cta-section">
+            <h2 style="color: #007BFF; margin-bottom: 20px;">Ready to Transform Your Career?</h2>
+            <p style="color: #E0E0E0; max-width: 800px; margin: 0 auto 30px;">
+                Join thousands of successful professionals who have accelerated their careers with our proven marketing strategies. Start your journey today!
+            </p>
+            <div class="cta-buttons">
+                <a href="index.html" class="btn btn-primary" style="padding: 15px 40px; font-size: 1.2em;">Back to Home</a>
+                <a href="mailto:info@radit.cloud" class="btn btn-secondary" style="padding: 15px 40px; font-size: 1.2em;">Schedule Consultation</a>
+            </div>
+        </div>
+
+        <a href="index.html" class="back-link">← Back to Home</a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

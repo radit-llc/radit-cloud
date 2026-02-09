@@ -147,15 +147,27 @@
             line-height: 1.5;
         }
 
-        .cta-buttons {
-            display: flex;
-            gap: 15px;
-            margin-top: 30px;
+        .stripe-button {
+            background: #635bff;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            font-size: 1.1em;
+            width: 100%;
+            text-align: center;
+            margin-top: 15px;
         }
 
-        .cta-buttons .btn {
-            flex: 1;
-            text-align: center;
+        .stripe-button:hover {
+            background: #4a42d4;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(99, 91, 255, 0.3);
         }
 
         .course-details {
@@ -165,6 +177,7 @@
             color: #A0A0A0;
             font-size: 0.9em;
             margin-top: 10px;
+            flex-wrap: wrap;
         }
 
         .testimonials {
@@ -265,10 +278,6 @@
             .training-cards {
                 grid-template-columns: 1fr;
             }
-            
-            .cta-buttons {
-                flex-direction: column;
-            }
         }
     </style>
 </head>
@@ -308,10 +317,7 @@
                     <span>🖥️ Hands-on Labs</span>
                     <span>📚 Complete Materials</span>
                 </div>
-                <div class="cta-buttons">
-                    <a href="payment.html?product=cyber-security&price=350" class="btn btn-primary">Enroll Now</a>
-                    <button class="btn btn-secondary" onclick="showDetails('cyber')">View Syllabus</button>
-                </div>
+                <a href="https://buy.stripe.com/dRmaEP3Xda8vcIS4GB5EY05" class="stripe-button" target="_blank">Enroll Now - $350</a>
             </div>
 
             <!-- AI/ML Training -->
@@ -343,10 +349,7 @@
                     <span>💻 Code Examples</span>
                     <span>📊 Real Projects</span>
                 </div>
-                <div class="cta-buttons">
-                    <a href="payment.html?product=ai-ml&price=350" class="btn btn-primary">Enroll Now</a>
-                    <button class="btn btn-secondary" onclick="showDetails('ai')">View Syllabus</button>
-                </div>
+                <a href="https://buy.stripe.com/00w6oz8dtdkHgZ88WR5EY04" class="stripe-button" target="_blank">Enroll Now - $350</a>
             </div>
 
             <!-- Java Technology -->
@@ -377,10 +380,7 @@
                     <span>⚡ Flexible Schedule</span>
                     <span>🏗️ Project Building</span>
                 </div>
-                <div class="cta-buttons">
-                    <a href="payment.html?product=java&price=300" class="btn btn-primary">Enroll Now</a>
-                    <button class="btn btn-secondary" onclick="showDetails('java')">View Syllabus</button>
-                </div>
+                <a href="https://buy.stripe.com/7sYcMX3XdgwT9wG2yt5EY06" class="stripe-button" target="_blank">Enroll Now - $300</a>
             </div>
 
             <!-- .NET Technology -->
@@ -411,10 +411,7 @@
                     <span>☁️ Cloud Integration</span>
                     <span>🏢 Enterprise Focus</span>
                 </div>
-                <div class="cta-buttons">
-                    <a href="payment.html?product=dotnet&price=300" class="btn btn-primary">Enroll Now</a>
-                    <button class="btn btn-secondary" onclick="showDetails('dotnet')">View Syllabus</button>
-                </div>
+                <a href="https://buy.stripe.com/3cI00bdxNbcz6ku7SN5EY07" class="stripe-button" target="_blank">Enroll Now - $300</a>
             </div>
 
             <!-- Full Stack Developer -->
@@ -447,103 +444,10 @@
                     <span>🔧 End-to-End Projects</span>
                     <span>📈 Career Ready</span>
                 </div>
-                <div class="cta-buttons">
-                    <a href="payment.html?product=fullstack&price=500" class="btn btn-primary">Enroll Now</a>
-                    <button class="btn btn-secondary" onclick="showDetails('fullstack')">View Syllabus</button>
-                </div>
+                <a href="https://buy.stripe.com/00w3cndxN80n4cm6OJ5EY03" class="stripe-button" target="_blank">Enroll Now - $500</a>
             </div>
         </div>
 
         <div class="custom-training">
             <h2>Need Customized Training?</h2>
-            <p>We offer customized training programs tailored to your specific needs and schedule. Whether you need a different duration, specific topics, or corporate training, we can create a program just for you.</p>
-            <a href="mailto:admin@radit.cloud" class="btn btn-primary" style="padding: 15px 30px; font-size: 1.1em;">Contact Admin for Custom Learning</a>
-            <p style="margin-top: 15px; font-size: 0.9em;">Email: admin@radit.cloud</p>
-        </div>
-
-        <div class="training-benefits">
-            <h2 style="text-align: center; color: #007BFF; margin-bottom: 30px;">Bootcamp Benefits</h2>
-            <div class="benefits-grid">
-                <div class="benefit-item">
-                    <div style="font-size: 2.5em;">⚡</div>
-                    <h4>Intensive Learning</h4>
-                    <p>Accelerated programs designed for rapid skill acquisition</p>
-                </div>
-                <div class="benefit-item">
-                    <div style="font-size: 2.5em;">🖥️</div>
-                    <h4>Hands-on Labs</h4>
-                    <p>Practical exercises and real-world scenarios</p>
-                </div>
-                <div class="benefit-item">
-                    <div style="font-size: 2.5em;">📚</div>
-                    <h4>Complete Materials</h4>
-                    <p>Comprehensive notes, theory, and industrial experience</p>
-                </div>
-                <div class="benefit-item">
-                    <div style="font-size: 2.5em;">👨‍🏫</div>
-                    <h4>Expert Guidance</h4>
-                    <p>Learn from industry professionals with real experience</p>
-                </div>
-                <div class="benefit-item">
-                    <div style="font-size: 2.5em;">🎓</div>
-                    <h4>Certification</h4>
-                    <p>Industry-recognized certificates upon completion</p>
-                </div>
-                <div class="benefit-item">
-                    <div style="font-size: 2.5em;">💼</div>
-                    <h4>Career Support</h4>
-                    <p>Resume review and job placement assistance</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="testimonials">
-            <h2>Student Success Stories</h2>
-            <div class="testimonial-cards">
-                <div class="testimonial-card">
-                    <div class="testimonial-text">
-                        "The 15-day Cyber Security bootcamp was intense but incredibly valuable. The scenario-based learning helped me understand real-world security challenges."
-                    </div>
-                    <div class="testimonial-author">- Michael R., Security Analyst</div>
-                </div>
-                <div class="testimonial-card">
-                    <div class="testimonial-text">
-                        "The Full Stack bootcamp gave me all the skills I needed to switch careers. The 45-day program was perfectly paced with hands-on projects every week."
-                    </div>
-                    <div class="testimonial-author">- Sarah L., Full Stack Developer</div>
-                </div>
-                <div class="testimonial-card">
-                    <div class="testimonial-text">
-                        "As a beginner in AI/ML, the 15-day bootcamp provided the perfect foundation. The comprehensive materials and labs made complex concepts easy to understand."
-                    </div>
-                    <div class="testimonial-author">- David K., AI Engineer</div>
-                </div>
-            </div>
-        </div>
-
-        <div style="text-align: center; margin-top: 40px;">
-            <p style="color: #E0E0E0; font-size: 1.1em; margin-bottom: 20px;">
-                Ready to accelerate your career? Enroll in one of our intensive bootcamps today!
-            </p>
-            <a href="payment.html" class="btn btn-primary" style="padding: 15px 40px; font-size: 1.2em;">View All Payment Options</a>
-        </div>
-
-        <a href="index.html" class="back-link">← Back to Home</a>
-    </div>
-
-    <script>
-        function showDetails(course) {
-            const courseDetails = {
-                'cyber': 'Cyber Security Bootcamp Syllabus: 1. Network Security Fundamentals 2. Ethical Hacking Techniques 3. Cryptography & Encryption 4. Incident Response 5. Security Compliance Standards 6. Penetration Testing 7. Risk Management 8. Real-World Case Studies',
-                'ai': 'AI/ML Bootcamp Syllabus: 1. Python for AI/ML 2. Machine Learning Algorithms 3. Deep Learning Fundamentals 4. Neural Networks 5. Natural Language Processing 6. Computer Vision 7. Model Deployment 8. MLOps Practices 9. Industry Projects',
-                'java': 'Java Bootcamp Syllabus: 1. Java Fundamentals 2. Object-Oriented Programming 3. Collections Framework 4. Spring Framework 5. Spring Boot 6. Microservices 7. REST APIs 8. Database Integration 9. Security 10. Project Development',
-                'dotnet': '.NET Bootcamp Syllabus: 1. C# Programming 2. ASP.NET Core 3. MVC Architecture 4. Web APIs 5. Entity Framework 6. Azure Services 7. Blazor Development 8. Security 9. Deployment 10. Enterprise Applications',
-                'fullstack': 'Full Stack Bootcamp Syllabus: 1. HTML/CSS/JavaScript 2. React.js Framework 3. Vue.js Framework 4. Node.js Backend 5. Express.js 6. Database Management 7. REST/GraphQL APIs 8. DevOps 9. Cloud Deployment 10. Complete Projects'
-            };
-            
-            alert(courseDetails[course]);
-        }
-    </script>
-    <script src="script.js"></script>
-</body>
-</html>
+            <
